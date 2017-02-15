@@ -14,12 +14,12 @@ In combination with RNA-seq gene expression analysis, below question may be aske
     ls *ac
 
 ### Previous analytic pipeline built by Rick
-Bash pipeline (`~/jfw-lab/home/remkv6/bin/sickle2genomes1.2.sh`) processes raw fastq files:
-* Quality filter and trim Fastq files - sickle
-* Map reads to chloroplas, mitocondrial and ribosomal DNAs -  bwa
-* Extract unmapped reads as new fastq files - samtools view, beadtools bam2fastq
-* Map filtered reads to reference genome -bwa
-* Call histone modification peaks - macs
+Bash pipeline (`~/jfw-lab/home/remkv6/bin/sickle2genomes1.2.sh`) processes raw fastq files as:
+1. Quality filter and trim Fastq files - sickle
+2. Map reads to chloroplas, mitocondrial and ribosomal DNAs -  bwa
+3. Extract unmapped reads as new fastq files - samtools view, beadtools bam2fastq
+4. Map filtered reads to reference genome -bwa
+5. Call histone modification peaks - macs
 
 ---
 
