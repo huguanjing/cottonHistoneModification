@@ -9,9 +9,17 @@ In combination with RNA-seq gene expression analysis, below question may be aske
 ## Data preprocessing
 
 ### Raw fastq files
+
+    ssh you@biocrunch.ent.iastate.edu
+    ls
+    # if ISILON folder not mounted before, do this:
+    ln -s /net/my.files.iastate.edu/ifs/isu/las/research/jfw-lab jfw-lab
     cd ~/jfw-lab/RawData/Rick_Chip/clean_reads
     # ig - negative control; ac - H3K9ac; ch3 - cenH3
     ls *ac
+    
+### AD1 ref
+    ls ~/jfw-lab/GenomicResources/archived_resources/gmapdb/AD1TM1/TM1.fasta
 
 ### Previous analytic pipeline built by Rick
 Bash pipeline (`~/jfw-lab/home/remkv6/bin/sickle2genomes1.2.sh`) processes raw fastq files as:
