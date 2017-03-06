@@ -8,12 +8,18 @@ In combination with RNA-seq gene expression analysis, below question may be aske
 
 ## Data preprocessing
 
+### Access server
+   ssh you@biocrunch.ent.iastate.edu
+   # if LSS folder not mounted before, do this:
+   ln -s /lss/research/jfw-lab/ jfw-lab
+   # ISILON will be no longer maintained since June, 2017
+   # ln -s /net/my.files.iastate.edu/ifs/isu/las/research/jfw-lab jfw-lab
+
 ### Raw fastq files
 
-    ssh you@biocrunch.ent.iastate.edu
+    
     ls
-    # if ISILON folder not mounted before, do this:
-    ln -s /net/my.files.iastate.edu/ifs/isu/las/research/jfw-lab jfw-lab
+    
     cd ~/jfw-lab/RawData/Rick_Chip/clean_reads
     # ig - negative control; ac - H3K9ac; ch3 - cenH3
     ls *ac
